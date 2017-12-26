@@ -777,7 +777,11 @@ void mdss_dsi_set_reg(struct mdss_dsi_ctrl_pdata *ctrl, int off,
 int mdss_dsi_phy_pll_reset_status(struct mdss_dsi_ctrl_pdata *ctrl);
 int mdss_dsi_check_panel_status(struct mdss_dsi_ctrl_pdata *ctrl, void *arg);
 
+#ifdef CONFIG_DEBUG_FS
 void mdss_dsi_debug_bus_init(struct mdss_dsi_data *sdata);
+#else
+static inline void mdss_dsi_debug_bus_init(struct mdss_dsi_data *sdata) { }
+#endif
 
 int mdss_dsi_px_clk_req(struct mdss_panel_data *pdata, int enable);
 int mdss_dsi_disp_vci_en(struct mdss_panel_data *pdata, int enable);
