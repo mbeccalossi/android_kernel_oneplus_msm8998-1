@@ -184,4 +184,12 @@ config ARCH_ZYNQMP
 	help
 	  This enables support for Xilinx ZynqMP Family
 
+config BOARD_ONEPLUS5
+	bool "Enable Support for OnePlus A5000 & A5010"
+	depends on ARCH_MSM8998
+	help
+	  This enables support for the A5000 & A5010 devices.
+	  If you do not wish to build a kernel that runs on these
+	  devices, say 'N' here.
+
 endmenu
