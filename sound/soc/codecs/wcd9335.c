@@ -46,8 +46,6 @@
 #include "wcd9xxx-resmgr-v2.h"
 #include "wcd_cpe_core.h"
 #include "wcdcal-hwdep.h"
-/*zhiguang.su@MultiMedia.AudioDrv, 2015-11-09, add for debug*/
-#include <sound/sounddebug.h>
 
 #define TASHA_RX_PORT_START_NUMBER  16
 
